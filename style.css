@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Poppins', sans-serif;
+   
+   
+   
+}
+/* -------------------NavBar------------------------- */
+nav {
+    display: grid;
+    background-color: #000;
+    grid-template-columns: 1fr 2fr;
+}
+nav ul {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    }  
+.navbar_anchor {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 5%;
+    }
+.navbar_anchor:hover{
+    background-color: #333;
+    transition:.4s;
+    padding:1.5rem;
+    border-radius: 5%;
+    cursor: pointer;
+    } 
+.logo {
+    width: 6.25rem;
+    height: auto;
+    border-radius: 50%;
+    margin: 0.6rem;
+    }
+/* -----------------------Navbar end-------------------------- */
+
+/* -----------------------index----------------------------------- */
+main{
+    margin: 2rem;
+}
+section {
+    margin-bottom:1.2rem;
+}
+.img_smart{
+    display: block;
+    margin:0 auto;
+    max-width: 100%;
+    height: auto;
+}
+figcaption{
+    font-size: x-small;
+    text-align: center;
+    margin:0 auto;
+    max-width: 90%;
+    padding-bottom: 2rem;
+}
+
+h1 {
+   
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    margin-bottom: 0.625rem;
+   
+}
+
+p {
+    margin: auto;
+    text-align: justify;
+    max-width: 100%;
+}
+
+.five_cities{
+    margin-left: 2rem;
+}
+
+/* --------------------------------index end------------------------- */
+
+/*---------------------------------ciudades-------------------------*/
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+.image-container-item >img {
+    max-width: 30rem;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+.texto-ciudades, h3{
+    text-align: center;
+}
+/*--------------------------------ciudades end--------------------*/
+
+.fondo-imagen{ 
+    background-image: url(./img/Smart.jpg);
+    
+}
+/* --------------------------formulario-------------------------*/
+form{
+   
+    width: 30rem;
+    margin: auto;
+  
+    background: black;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1.8rem;
+    border-radius: 0.9rem;
+    margin-bottom: 1.2rem;
+    opacity: 0.8;
+}
+.form-header, label, legend{
+    text-align: center;
+    color:#fff;
+}
+.form-input, .form-textarea{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border: none;
+
+}
+.form-textarea{
+    min-height: 6.25rem;
+    max-height: 12.5rem;
+    max-width: 100%;
+}
+.button{
+    color: black;
+    background: #38b6ff;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+#button:hover{
+    cursor: pointer;
+}
+
+
+/*-------------------------formulario end----------------------- */
+
+
+
+  
+
+
+/* -------------------------footer------------------------------- */
+footer{
+    
+    background-color: #000;
+    color: white;
+    padding: 1.2rem;
+    bottom: 0;
+    width: 100%;
+    
+ 
+}
+.social-icons{ 
+    padding: 1.2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;  
+}
+.footer-image{
+   width: 3rem;
+   margin: 0 auto;
+   border-radius: 50%;
+   display: flex; 
+  
+}
+.footer-text-name{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+
+}
+.footer-text-name-span{
+    color:#38b6ff;
+    
+}
+.footer-copyright{
+ font-size: small;
+ text-align: center;
+ padding: 0.8rem;
+}
+.footer-links a{
+    color:white;
+
+}
+
+/* ----------------------------footer end------------------------------ */
+/* ------------------------------------ responsive------------------------ */
+@media screen and (max-width: 980px) {
+    nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem;
+    }
+
+    img {
+    padding: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem;
+
+    }
+
+    nav ul li img {
+    padding: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.25rem;
+    }
+
+    .navbar_anchor, .navbar_anchor:hover {
+    padding: 0;
+    }
+    img {
+    padding: 0.4rem;
+    }
+    form{
+        width: 100%;
+        margin: 0;
+    }
+    
+}  
