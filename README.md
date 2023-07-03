@@ -17,4 +17,4 @@ El cuerpo de la home lleva una imagen y varios parrafos con la descripcion del s
 Tiene images con un titulo
 
 # Contacto
-Tiene un formulario con diferentes typo de inputs, asi como un boton para enviarlo
+Tiene un formulario con diferentes typo de inputs, asi como un boton para enviarlo.
