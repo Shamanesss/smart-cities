@@ -6,8 +6,6 @@
 
 # Sitio WEB
 
-
-![Home][https://github.com/Shamanesss/edurne-montalban_examen_html/blob/main/Smart-Cities-Pagina-de-inicio.png]
 ### Consta de de 3 paginas 
 
 Tienen un footer con enlaces a diferentes sitios web de redes sociales asi como la politica de privacidad
@@ -21,3 +19,5 @@ Tiene images con un titulo
 
 # Contacto
 Tiene un formulario con diferentes typo de inputs, asi como un boton para enviarlo.
+
+
