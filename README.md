@@ -5,6 +5,10 @@
 ### https://github.com/Shamanesss/edurne-montalban_examen_html
 
 # Sitio WEB
+<h2>home</h2> 
+<p align="center">
+<img style="width:250px; height:300px; margin:12px; display:flex; justify-content:center" src="https://github.com/Shamanesss/edurne-montalban_examen_html/blob/main/Smart-Cities-Pagina-de-inicio.png" alt="Home"/>
+</p>
 
 ### Consta de de 3 paginas 
 
@@ -19,5 +23,7 @@ Tiene images con un titulo
 
 # Contacto
 Tiene un formulario con diferentes typo de inputs, asi como un boton para enviarlo.
+
+
 
 
