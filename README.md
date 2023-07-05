@@ -31,7 +31,7 @@ Tiene un formulario con diferentes typo de inputs, asi como un boton para enviar
 * Loguear en la pagina
 * Cerrar sesion de login
 * Mostrar la fecha y la hora en el home
-* Habiliar el boton al aceptar las teminos y condiciones
+* Habiliar el boton al aceptar las terminos y condiciones
 
 #### Captura del codigo javaScript
 
