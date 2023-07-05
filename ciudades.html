@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Cities - Página de inicio</title>
+    <title>Smart Cities - Ranking de Ciudades</title>
+    <meta
+    name="description"
+    content="Descubre cómo las Smart Cities utilizan el Internet de las Cosas (IoT) para mejorar la vida urbana. Explora nuestra página de inicio para obtener información relevante sobre Smart Cities y sus aplicaciones en ciudades inteligentes."
+  />
+  
+  <meta name="author" content="Edurne" />
+  <meta name="language" content="Español" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./img/log1.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,11 +25,53 @@
               <li><a class="navbar_anchor" href="/index.html">Home</a></li>
               <li><a class="navbar_anchor" href="/ciudades.html">Ciudades</a></li>
                 <li><a class="navbar_anchor" href="/contacto.html">Contacto</a></li>
-             
-            </ul>
+                <li>
+                  <a
+                    class="navbar_anchor"
+                    id="loginItem"
+                    onclick="openLoginPopup()"
+                    href="#"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-name-login">
+                <div id="nav-name-login-id" class="nav-name-show"></div>
+                <button id="btn-logout">Cerrar sesión</button>
+              </div>
           </nav>
     </header>
     <main>
+      <div id="loginPopup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closeLoginPopup()">&times;</span>
+          <form id="formulario_login">
+            <h2 class="form-header">Login</h2>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              class="form-input"
+              placeholder="Usuario"
+            />
+            <div class="contenedorOjo">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                class="form-input"
+                placeholder="Contraseña"
+              />
+              <i class="fa-regular fa-eye" id="ojoAbierto"></i>
+              <i class="fa-regular fa-eye-slash" id="ojoCerrado"></i>
+            </div>
+            <div id="username-error"></div>
+            <button class="button" id="btn-popup" type="submit">
+              Iniciar sesión
+            </button>
+          </form>
+        </div>
+      </div>
       <h1>
         Las ciudades inteligentes en 2023
       </h1>
@@ -110,5 +162,6 @@
           <a href="#">Politica de privacidad</a>
         </div>
       </footer>
+    <script src="./js/login.js"></script>
 </body>
 </html>

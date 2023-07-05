@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Cities</title>
+    <meta
+    name="description"
+    content="Contáctanos para obtener más información sobre Smart Cities e IoT. Utiliza nuestro formulario de contacto para consultas, comentarios o solicitudes."
+  />
+  <meta name="author" content="Edurne" />
+  <meta name="language" content="Español" />
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./img/log1.ico" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body class="fondo-imagen">
     
@@ -18,11 +32,53 @@
               <li><a class="navbar_anchor" href="/ciudades.html">Ciudades</a></li>
     
               <li><a class="navbar_anchor" href="/contacto.html">Contacto</a></li>
-             
+              <li>
+                <a
+                  class="navbar_anchor"
+                  id="loginItem"
+                  onclick="openLoginPopup()"
+                  href="#"
+                  >Login</a
+                >
+              </li>
             </ul>
+            <div class="nav-name-login">
+              <div id="nav-name-login-id" class="nav-name-show"></div>
+              <button id="btn-logout">Cerrar sesión</button>
+            </div>
           </nav>
     </header>
     <main>
+      <div id="loginPopup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closeLoginPopup()">&times;</span>
+          <form id="formulario_login">
+            <h2 class="form-header">Login</h2>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              class="form-input"
+              placeholder="Usuario"
+            />
+            <div class="contenedorOjo">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                class="form-input"
+                placeholder="Contraseña"
+              />
+              <i class="fa-regular fa-eye" id="ojoAbierto"></i>
+              <i class="fa-regular fa-eye-slash" id="ojoCerrado"></i>
+            </div>
+            <div id="username-error"></div>
+            <button class="button" id="btn-popup" type="submit">
+              Iniciar sesión
+            </button>
+          </form>
+        </div>
+      </div>
 <!-- Form -->
 <section id="form-container">
     <form action="#" method="GET">
@@ -82,10 +138,10 @@
         name="message"
       ></textarea>
       <div>
-        <input type="checkbox" id="accept" name="accept" required />
+        <input type="checkbox" id="accept" name="accept" />
         <label for="accept">Acepto los términos y condiciones.</label>
       </div>
-      <button type="submit" class="form-input button" id="button">
+      <button type="submit" class="form-input button" id="button" disabled>
         Enviar
       </button>
     </form>
@@ -115,5 +171,7 @@
           <a href="#">Politica de privacidad</a>
         
       </footer>
+      <script src="./js/login.js"></script>
+      <script src="./js/botonchecked.js"></script>
 </body>
 </html>
