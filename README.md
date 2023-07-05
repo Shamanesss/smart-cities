@@ -5,6 +5,8 @@
 ### https://github.com/Shamanesss/edurne-montalban_examen_html
 
 # Sitio WEB
+
+(https://github.com/Shamanesss/edurne-montalban_examen_html/blob/main/Smart-Cities-Pagina-de-inicio.png)
 ### Consta de de 3 paginas 
 
 Tienen un footer con enlaces a diferentes sitios web de redes sociales asi como la politica de privacidad
